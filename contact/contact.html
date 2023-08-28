@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./contact.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+    <div class="topnav" id="myTopnav">
+      <div class="top-left">
+        <a href="../index.html" class="active" id="home-button">
+          <i class="fa-solid fa-house fa-xl"><span id="NGP">NGP</span></i></a
+        >
+      </div>
+      <div class="links">
+        <a href="../bio/bio.html" class="nav-link">Bio</a>
+        <a href="../shows/shows.html" class="nav-link">Shows</a>
+        <a href="../collaborators/collaborators.html" class="nav-link">Collaborators</a>
+        <a href="./contact.html" class="nav-link">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="navDropdown()">&#9776;</a>
+      </div>
+    </div>
+    <div class="form-container">
+        <h1>Contact Noe</h1>
+    <form action="mailto:noe.gomez5@gmail.com" method="post" enctype="text/plain">
+        <div class="names">
+            <input type="text" name="name" class="info" placeholder="First Name*" required>
+            <input type="text" name="name" class="info" placeholder="Last Name*" required>
+        </div>
+        <div class="contact-info">
+            <input type="text" name="mail" class="info" placeholder="Email*" required>
+            <input type="text" name="phone" class="info" placeholder="Phone">
+        </div>
+        <div class="comments">
+           <textarea name="" id="text-area" class="info" placeholder="Comments*" required></textarea>
+        </div>
+        <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div>
+            <a
+                class="social-media youtube"
+                href="https://www.youtube.com/@noegomezproductions/videos"
+                target="_blank"
+                rel="noreferrer noopener">
+                <i class="fa-brands fa-youtube fa-3x"></i>
+            </a>
+            </div>
+            <div>
+            <a
+                class="social-media instagram"
+                href="https://www.instagram.com/noegomez.productions/"
+                target="_blank"
+                rel="noreferrer noopener">
+                <i class="fa-brands fa-instagram fa-3x"></i>
+            </a>
+            </div>
+            <div>
+            <a
+                class="social-media facebook"
+                href="https://www.facebook.com/NoeGomez51"
+                target="_blank"
+                rel="noreferrer noopener">
+                <i class="fa-brands fa-facebook fa-3x"></i>
+            </a>
+            </div>
+            <div>
+            <a
+                class="social-media email"
+                href="./contact.html">
+                <i class="fa-solid fa-envelope fa-3x"></i>
+            </a>
+            </div>
+        </div>
+        </footer>
+    </div>
+    <script src="./contact.js" charset="UTF-8"></script>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./shows.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <div class="top-left">
+        <a href="../index.html" class="active" id="home-button">
+          <i class="fa-solid fa-house fa-xl"><span id="NGP">NGP</span></i></a
+        >
+      </div>
+      <div class="links">
+        <a href="../bio/bio.html" class="nav-link">Bio</a>
+        <a href="../shows/shows.html" class="nav-link">Shows</a>
+        <a href="../collaborators/collaborators.html" class="nav-link">Collaborators</a>
+        <a href="../contact/contact.html" class="nav-link">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="navDropdown()"
+          >&#9776;</a>
+      </div>
+    </div>
+    <div class="title-container">
+      <h1 id="title">Noe's Shows</h1>
+      <img src="images/Header.JPG" alt="header-img" id="header-img">
+    </div>
+    <div class="shows-container">
+      <div class="slide active">
+        <img 
+        src="./images/Arcadia_img.webp" 
+        alt="arcadia-img"
+        class="img-wrap">
+          <h2 class="show-title">Arcadia High School</h2>
+          <h3 class="show-description">Searching for Serenity</h3>
+        <iframe 
+        src="https://www.youtube.com/embed/NhqJ6GP8wa4?si=9rHjsyVyjMp-cwv3" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" 
+        allowfullscreen>
+        </iframe>
+      </div>
+      <div class="slide">
+        <img 
+        src="images/Pow_img.webp"
+        alt="pow-img"
+        class="img-wrap">
+          <h2 class="show-title">POW Percussion</h2>
+          <h3 class="show-description">Dia De Los Muertos</h3>
+          <iframe 
+          src="https://www.youtube.com/embed/ZpHkxT_axp8?si=7nGeDVbP3sKlGGzT"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="slide">
+        <img 
+        src="images/Rowland_img.webp"
+        alt="rowland-img"
+        class="img-wrap">
+          <h2 class="show-title">Rowland High School</h2>
+          <h3 class="show-description">The Blue Bird</h3>
+          <iframe 
+          src="https://www.youtube.com/embed/4yGvx60oh3s?si=XqqqQnlbY1rnb9d5"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="slide">
+        <img 
+        src="images/Bloomington_img.webp"
+        alt="bloomington-img"
+        class="img-wrap">
+          <h2 class="show-title">Bloomington High School</h2>
+          <h3 class="show-description">Fading Beauty</h3>
+          <iframe 
+          src="https://www.youtube.com/embed/fvsBbM0RTIo?si=O3EYz_pPdq1xzdLu"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="slide">
+        <img 
+        src="./images/Motor-city_img.webp"
+        alt="motor-city-img"
+        class="img-wrap">
+          <h2 class="show-title">Motor City Percussion</h2>
+          <h3 class="show-description">Blue</h3>
+          <iframe 
+          src="https://www.youtube.com/embed/rfO6hLT4BLQ?si=xkWT0oMghU0ipmNg"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="slide">
+        <img 
+        src="images/Clovis-east_img.webp"
+        alt="clovis-east-img"
+        class="img-wrap">
+          <h2 class="show-title">Clovis East High School</h2>
+          <h3 class="show-description">Portal</h3>
+          <iframe 
+          src="https://www.youtube.com/embed/RzAns9kM_ok?si=PHq3QTl8dMokfMRN"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="slide">
+        <img 
+        src="./images/POW2022_img.webp"
+        alt="pow22-img"
+        class="img-wrap">
+          <h2 class="show-title">POW Percussion</h2>
+          <h3 class="show-description">Wonderland</h3>
+          <iframe 
+          src="https://www.youtube.com/embed/zFIaOt2v_9w?si=Keh4nYbvCr4beBBn"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="button-container">
+        <button class="arrow left-arrow" id="left">
+           <i class="fa-solid fa-angle-left fa-2x"></i>
+        </button>
+        <button class="arrow right-arrow" id="right">
+          <i class="fa-solid fa-angle-right fa-2x"></i>
+        </button>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div>
+          <a
+            class="social-media youtube"
+            href="https://www.youtube.com/@noegomezproductions/videos"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <i class="fa-brands fa-youtube fa-3x"></i>
+          </a>
+        </div>
+        <div>
+          <a
+            class="social-media instagram"
+            href="https://www.instagram.com/noegomez.productions/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <i class="fa-brands fa-instagram fa-3x"></i>
+          </a>
+        </div>
+        <div>
+          <a
+            class="social-media facebook"
+            href="https://www.facebook.com/NoeGomez51"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <i class="fa-brands fa-facebook fa-3x"></i>
+          </a>
+        </div>
+        <div>
+          <a
+            class="social-media email"
+            href="../contact/contact.html"
+          >
+            <i class="fa-solid fa-envelope fa-3x"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="./shows.js" charset="UTF-8"></script>
+  </body>
+</html>

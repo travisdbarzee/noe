@@ -284,15 +284,22 @@ a:hover {
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  position: relative;
   cursor: pointer;
 }
 
+.highlight {
+  position: relative;
+}
 
 .highlight-quote {
   position: absolute;
   color: var(--white);
   visibility: hidden;
+  max-width: 370px;
+  height: auto;
+  top: 10%;
+  left: 10%;
+  right: 10%;
 }
 
 .opaque-img {
@@ -308,8 +315,7 @@ a:hover {
   box-shadow: 5px 5px 14px var(--darkSilver);
   border-radius: 10px;
   padding: 15px;
-  font-size: 22px;
-  max-width: 370px;
+  font-size: 18px;
   text-align: center;
   letter-spacing: 0.3px;
   font-weight: bolder;
@@ -321,87 +327,47 @@ a:hover {
 
 .logo {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
 
 @keyframes moveLogo {
   100% {
-    transform: translate(185px, 100px) scale(0.6)
+    transform: translate(5vw, 8.5vh) scale(0.6);
   }
-
 }
+
 .move {
   animation: moveLogo 1.2s ease-in-out;
   animation-fill-mode: forwards;
 }
 
-#arcadia-info {
-  bottom: -20%;
-  left: 6%;
-}
-
 #arcadia-logo {
-  width: 4%;
-  bottom: -21%;
-  left: 16%;
-}
-
-#pulse-info {
-  bottom: -26%;
-  right: 39%;
+  width: 10%;
 }
 
 #pulse-logo {
-  width: 13%;
-  bottom: -21%;
-  right: 44%;
+  width: 40%;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
 }
 
-#scv-info {
-  bottom: -25%;
-  right: 7%;
-}
-
 #scv-logo {
-  width: 5%;
-  bottom: -24%;
-  right: 15%;
-}
-
-#bloomington-info {
-  bottom: -54%;
-  left: 8%;
+  width: 13%;
 }
 
 #bloomington-logo {
-  width: 6%;
-  left: 16%;
-  bottom: -56%;
-}
-
-#pow-info {
-  bottom: -56%;
-  right: 39%;
+  width: 14%;
 }
 
 #pow-logo {
-  width: 13%;
-  height: 15%;
-  bottom: -56%;
-  right: 44%;
-}
-
-#phantom-info {
-  right: 6%;
-  bottom: -56%;
+  width: 25%;
+  height: auto;
 }
 
 #phantom-logo {
-  width: 5%;
-  right: 15%;
-  bottom: -56%;
+  width: 13%;
 }
 
 .clients-section-container {
@@ -421,14 +387,13 @@ h1 {
 
 .panel-container {
   display: flex;
-  margin: 2rem;
 }
 
 .panel {
   background-size: auto 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  max-height: 60vh;
+  max-height: 70vh;
   border-radius: 3rem;
   color: var(--black);
   cursor: pointer;
@@ -525,11 +490,15 @@ iframe {
   top: 15vh;
   box-shadow: 10px 10px 18px var(--darkSilver);
   object-fit: contain;
+  width: 100%;
+  max-width: 56vw;
+  height: 100%;
+  max-height: 60vh;
 }
 
 .circles {
   position: absolute;
-  bottom: 7rem;
+  bottom: 13%;
 }
 
 .fa-circle {
@@ -543,7 +512,7 @@ iframe {
 
 .arrow-btns {
   position: absolute;
-  bottom: 4rem;
+  bottom: 6%;
 }
 
 .arrow {
@@ -574,7 +543,7 @@ iframe {
 
 footer {
   background-color: var(--silver);
-  padding: 3rem;
+  padding: 30px 0 40px 0;
   overflow: hidden;
 }
 
@@ -601,7 +570,7 @@ footer {
     #d6249f 60%,
     #285aeb 90%
   );
-  border-radius: 25%;
+  border-radius: 20%;
 }
 
 .facebook:hover i {
@@ -615,217 +584,68 @@ footer {
 /* Responsiveness for medium screens */
 @media screen and (min-width: 1001px) and (max-width: 1350px) {
   .visible-quote {
-      max-width: 300px;
-      font-size: 20px;
-      padding: 10px;
-    }
-
-    @keyframes moveLogo {
-      100% {
-        transform: translate(100px, 100px) scale(0.8)
-      }
-    }
-
-    #arcadia-info {
-      bottom: -17%;
-      left: 3%;
-    }
-    
-    #arcadia-logo {
-      width: 4%;
-      bottom: -18%;
-      left: 15%;
-    }
-  
-    #pulse-info {
-      bottom: -24%;
-      right: 36%;
-    }
-
-    #pulse-logo {
-      width: 15%;
-      bottom: -20%;
-      right: 43%;
-    }
-  
-    #scv-info {
-      bottom: -23%;
-      right: 3%;
-    }
-
-    #scv-logo {
-      width: 5%;
-      bottom: -20%;
-      right: 12%;
-    }
-  
-    #bloomington-info {
-      bottom: -53%;
-      left: 3%;
-    }
-
-    #bloomington-logo {
-      width: 6%;
-      left: 17%;
-      bottom: -52%;
-    }
-  
-    #pow-info {
-      bottom: -57%;
-      right: 36%;
-    }
-
-    #pow-logo {
-      width: 12%;
-      height: 15%;
-      bottom: -56%;
-      right: 44%;
-    }
-  
-    #phantom-info {
-      right: 3%;
-      bottom: -56%;
-    }
-
-    #phantom-logo {
-      width: 5%;
-      right: 13%;
-      bottom: -53%;
-    }
-  
-  .panel {
-      max-height: 60vh;
-      margin-left: 1.15rem;
-    }
-    .panel h3 {
-      font-size: 1.5rem;
-    }
-    .panel.active-panel .quote {
-      font-size: 1rem;
-      letter-spacing: 0.01em;
-      line-height: 1.1;
-      margin: 2rem 2rem 1rem 2rem;
-    }
-    .panel.active-panel .author {
-      font-size: 1.25rem;
-    }
-    .panel.active-panel .author-info {
-      font-size: 0.6rem;
-    }
-    iframe {
-      width: 50%;
-      max-width: 56vw;
-      height: 100%;
-      max-height: 62vh;
-    }
+    font-size: 16px;
+  }
+  .panel h3 {
+    font-size: 24px;
+  }
+  .panel.active-panel .quote {
+    font-size: 18px;
+    letter-spacing: 0.01em;
+    margin: 2rem 2rem 1rem 2rem;
+  }
+  .panel.active-panel .author {
+    font-size: 18px;
+    margin: 0 0 0 2rem;
+  }
+  .panel.active-panel .author-info {
+    font-size: 12px;
+    margin: 0 0 0 2rem;
+  }
+  .drill-container {
+    height: 90vh;
+  }
+  iframe {
+    top: 20vh;
+    margin-top: 1.5rem;
+    width: 80%;
+    height: 50%;
+  }
 }
 
 /* Responsiveness for medium-small screens */
 @media screen and (min-width: 751px) and (max-width: 1000px) {
   .visible-quote {
-      max-width: 210px;
-      font-size: 18px;
-      padding: 7px;
-    }
-
-    @keyframes moveLogo {
-      100% {
-        transform: translate(70px, 90px) scale(0.9)
-      }
-    }
-  
-    #arcadia-info {
-      bottom: -19%;
-      left: 4%;
-    }
-
-    #arcadia-logo {
-      width: 6%;
-      bottom: -18%;
-      left: 15%;
-    }
-  
-    #pulse-info {
-      bottom: -26%;
-      right: 38%;
-    }
-
-    #pulse-logo {
-      width: 15%;
-      bottom: -20%;
-      right: 42%;
-    }
-  
-    #scv-info {
-      bottom: -24%;
-      right: 4%;
-    }
-
-    #scv-logo {
-      width: 7%;
-      bottom: -21%;
-      right: 13%;
-    }
-  
-    #bloomington-info {
-      bottom: -53%;
-      left: 4%;
-    }
-
-    #bloomington-logo {
-      width: 8%;
-      left: 15%;
-      bottom: -52%;
-    }
-  
-    #pow-info {
-      bottom: -55%;
-      right: 37%;
-    }
-
-    #pow-logo {
-      width: 12%;
-      height: 15%;
-      bottom: -56%;
-      right: 44%;
-    }
-  
-    #phantom-info {
-      right: 4%;
-      bottom: -56%;
-    }
-
-    #phantom-logo {
-      width: 7%;
-      right: 13%;
-      bottom: -54%;
-    }
-  
+    font-size: 14px;
+  }
   .panel {
-      max-height: 60vh;
-      margin-left: 1.15rem;
-    }
-    .panel h3 {
-      font-size: 1.5rem;
-    }
-    .panel.active-panel .quote {
-      font-size: 1rem;
-      letter-spacing: 0.01em;
-      line-height: 1.1;
-      margin: 2rem 2rem 1rem 2rem;
-    }
-    .panel.active-panel .author {
-      font-size: 1.25rem;
-    }
-    .panel.active-panel .author-info {
-      font-size: 0.6rem;
-    }
-    iframe {
-      width: 50%;
-      max-width: 56vw;
-      height: 100%;
-      max-height: 62vh;
-    }
+    margin-left: 1.15rem;
+  }
+  .panel h3 {
+    font-size: 20px;
+  }
+  .panel.active-panel .quote {
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    margin: 16px;
+  }
+  .panel.active-panel .author {
+    font-size: 14px;
+    margin: 0 0 0 16px;
+  }
+  .panel.active-panel .author-info {
+    font-size: 12px;
+    margin: 0 0 0 16px;
+  }
+  .drill-container {
+    height: 80vh;
+  }
+  iframe {
+    top: 25vh;
+    margin-top: 1rem;
+    width: 60%;
+    height: 45%;
+  }
 }
 
 /* Responsiveness for small screens */
@@ -841,15 +661,12 @@ footer {
     height: 30px;
     font-size: 16px;
   }
-
   .topnav:hover a {
     transform: none;
   }
-
   #hero-background-img {
     width: 80%;
   }
-
   .topnav a:not(:last-child),
   .dropdown .dropbtn {
     display: none;
@@ -858,7 +675,6 @@ footer {
     float: right;
     display: block;
   }
-
   .topnav.responsive {
     position: relative fixed;
   }
@@ -879,136 +695,69 @@ footer {
     width: 100%;
     text-align: left;
   }
-
   .top-left {
     margin-left: 0;
   }
-
   .links {
     float: none;
     margin: 0;
   }
-
   .top-highlights {
     display: grid;
     grid-template-columns: repeat(2, 40vw);
     grid-template-rows: repeat(3, 30vh);
     gap: 30px;
   }
-
-  .visible-quote {
-    max-width: 185px;
-    font-size: 16px;
-    padding: 5px;
-  }
-
   @keyframes moveLogo {
     100% {
-      transform: translate(70px, 90px)
+      transform: translate(5vw, 10vh);
     }
   }
-
-  #arcadia-info {
-    bottom: -15%;
-    left: 11%;
+  .visible-quote {
+    font-size: 14px;
+    padding: 10px;
   }
-
-  #arcadia-logo {
-    width: 6%;
-    bottom: -15%;
-    left: 24%;
-  }
-
-  #pulse-info {
-    bottom: -20%;
-    right: 11%;
-  }
-
-  #pulse-logo {
-    width: 17%;
-    bottom: -15%;
-    right: 20%;
-  }
-
-  #scv-info {
-    bottom: -52%;
-    left: 11%;
-  }
-
-  #scv-logo {
-    width: 7%;
-    bottom: -48%;
-    left: 24%;
-  }
-
-  #bloomington-info {
-    bottom: -48%;
-    left: 57%;
-  }
-
-  #bloomington-logo {
-    width: 8%;
-    left: 69%;
-    bottom: -49%;
-  }
-
-  #pow-info {
-    bottom: -84%;
-    right: 57%;
-  }
-
-  #pow-logo {
-    width: 12%;
-    bottom: -85%;
-    right: 67%;
-  }
-
-  #phantom-info {
-    right: 11%;
-    bottom: -84%;
-  }
-
-  #phantom-logo {
-    width: 7%;
-    right: 22%;
-    bottom: -82%;
-  }
-
   .panel-container {
-    margin: 0;
+    margin: 0 2vw 0 2vw;
   }
   .panel {
-    margin: 1.5vw;
-    width: 5vw;
+    margin: 1vw;
+    width: 10vw;
   }
   .active-panel {
-    width: 400px;
+    width: 60vw;
   }
   .panel.active-panel .quote {
     font-size: 16px;
-    width: 80%;
-    padding-bottom: 30px;
+    letter-spacing: 0.01em;
+    margin: 20px;
+  }
+  .panel.active-panel .author {
+    font-size: 16px;
+    margin: 0 0 0 20px;
+  }
+  .panel.active-panel .author-info {
+    font-size: 12px;
+    margin: 0 0 0 20px;
+  }
+  .panel h3 {
+    font-size: 20px;
   }
   .drill-container {
-    height: 50vh;
+    height: 55vh;
+  }
+  iframe {
+    margin-top: 0;
+    width: 60%;
+    height: 50%;
   }
   .circles {
-    bottom: 7rem;
+    bottom: 13%;
   }
   .arrow-btns {
-    bottom: 4rem;
+    bottom: 0;
   }
   footer {
     overflow-y: hidden;
-  }
-}
-
-/* Responsiveness for iframe on big screens */
-@media screen and (min-width: 750px) {
-  iframe {
-    width: 100%;
-    max-width: 56vw;
-    height: 100%;
-    max-height: 62vh;
   }
 }

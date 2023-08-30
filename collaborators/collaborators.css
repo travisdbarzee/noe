@@ -153,7 +153,7 @@ body {
   transition: transform 0.3s ease;
 }
 
-a:hover {
+.links a:hover {
   transform: scale(1.15);
 }
 
@@ -167,60 +167,26 @@ a:hover {
   opacity: 0;
   height: 100%;
   width: 100%;
+  background-image: url("./images/Background.png");
+  background-repeat: no-repeat;
+  background-position: 70% 20%;
+  background-size: cover;
   position: absolute;
   transition: 0.4s ease;
+}
+
+.slide.active {
+  opacity: 1;
 }
 
 .mugshot {
   position: absolute;
   height: 100%;
-  left: 14%;
+  left: 10%;
+  border: 4px solid var(--black);
+  box-shadow: 5px 5px 14px var(--darkSilver);
+  border-radius: 10px;
   z-index: 2;
-}
-
-.background {
-  position: absolute;
-  opacity: 50%;
-  height: 100%;
-  left: 40%;
-}
-
-.colab-contact {
-  padding-top: 20px;
-  text-align: center;
-}
-
-.colab-contact a {
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  font-size: 20px;
-  color: blue;
-}
-
-.socials-link {
-  cursor: pointer;
-  position: relative;
-  transition: transform 0.3s ease;
-  z-index: 10;
-}
-
-.socials-link:hover {
-  transform: scale(1.5);
-}
-
-.colab-socials {
-  padding-top: 20px;
-  justify-content: center;
-  align-items: center;
-}
-
-.colab-socials a {
-  text-decoration: none;
-  color: #000;
-  position: relative;
-  padding: 0 10px;
-  z-index: 10;
 }
 
 #long a {
@@ -231,26 +197,56 @@ a:hover {
   z-index: 10;
 }
 
-.slide.active {
-  opacity: 1;
-}
-
 .info-container {
   position: absolute;
-  left: 43%;
-}
-
-.info {
-  text-align: justify;
-  max-width: 700px;
-  line-height: 25px;
-  letter-spacing: 0.6px;
-  font-size: 16px;
+  left: 38%;
 }
 
 .collaborator {
   font-size: 44px;
   letter-spacing: 3px;
+}
+
+.info {
+  text-align: justify;
+  max-width: 46vw;
+  line-height: 22px;
+  letter-spacing: 0.6px;
+  font-size: 16px;
+}
+
+.colab-contact {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  gap: 30px;
+}
+
+.colab-contact a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 20px;
+}
+
+.socials-link {
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease;
+  z-index: 10;
+}
+
+.socials-link:hover {
+  transform: scale(1.2);
+}
+
+.colab-socials a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  padding: 0 10px;
+  z-index: 10;
 }
 
 .button-container {
@@ -279,11 +275,11 @@ a:hover {
 }
 
 .left-arrow {
-  left: 5%;
+  left: 3%;
 }
 
 .right-arrow {
-  right: 5%;
+  right: 3%;
 }
 
 .footer-container {
@@ -333,202 +329,91 @@ footer {
   color: #00a2ed;
 }
 
-/* Responsiveness for large screens */
-@media screen and (min-width: 1200px) and (max-width: 1500px) {
+/* Responsiveness for medium screens */
+@media screen and (min-width: 1001px) and (max-width: 1350px) {
   #title {
     font-size: 42px;
   }
-  
   .sub-caption {
     top: 47%;
     font-size: 1.3rem;
   }
-
-  .slider-container {
-    height: 70vh;
-  }
-
   .mugshot {
-    left: 12%;
+    left: 9%;
   }
-
-  .background {
-    left: 40%;
-  }
-
   .info-container {
-    left: 44%;
+    left: 42%;
   }
-  
+  .collaborator {
+    font-size: 40px;
+  }
   .info {
-    max-width: 600px;
-    line-height: 23px;
-    letter-spacing: 0.6px;
-    font-size: 15px;
+    max-width: 52vw;
+    line-height: 20px;
+    font-size: 14px;
   }
-
+  #long {
+    padding: 0;
+  }
   .arrow {
     padding: 15px;
     font-size: 25px;
     border-radius: 8px;
   }
-  
   .left-arrow {
     left: 1%;
   }
-  
   .right-arrow {
     right: 1%;
   }
 }
 
-/* Responsiveness for medium screens */
-@media screen and (min-width: 900px) and (max-width: 1199px) {
+/* Responsiveness for medium-small screens */
+@media screen and (min-width: 751px) and (max-width: 1000px) {
   #title {
     font-size: 38px;
     top: 25%;
   }
-  
   .sub-caption {
     top: 50%;
     line-height: 50px;
     max-width: 700px;
     font-size: 1.2rem;
   }
-
-  .slider-container {
-    height: 60vh;
-  }
-
   .mugshot {
+    left: 1%;
+    height: 80%;
+    top: 5%;
+  }
+  .info-container {
+    left: 40%;
+    right: 2%;
+  }
+  .collaborator {
+    font-size: 36px;
+  }
+  .info {
+    max-width: 58vw;
+    line-height: 20px;
+    font-size: 12px;
+    letter-spacing: 0.2px;
+  }
+  #long {
+    padding: 0;
+  }
+  .button-container {
+    top: 88%;
+  }
+  .arrow {
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 8px;
+  }
+  .left-arrow {
     left: 5%;
   }
-
-  .background {
-    left: 38%;
-  }
-
-  .collaborator {
-    font-size: 40px;
-    letter-spacing: 3px;
-  }
-
-  .info-container {
-    left: 43%;
-  }
-  
-  .info {
-    max-width: 500px;
-    line-height: 18px;
-    letter-spacing: 0.6px;
-    font-size: 14px;
-  }
-
-  .colab-contact {
-    padding-top: 10px;
-  }
-  
-  .colab-contact a {
-    font-size: 16px;
-    padding: 0 8px;
-  }
-  
-  .colab-socials {
-    padding-top: 10px;
-  }
-
-  .button-container {
-    top: 80%;
-  }
-
-  .arrow {
-    padding: 12px;
-    font-size: 20px;
-    border-radius: 8px;
-  }
-  
-  .left-arrow {
-    left: 3%;
-    z-index: 2;
-  }
-  
   .right-arrow {
-    right: 3%;
-  }
-}
-
-/* Responsiveness for medium-small screens */
-@media screen and (min-width: 751px) and (max-width: 899px) {
-  #title {
-    font-size: 32px;
-    top: 25%;
-  }
-  
-  .sub-caption {
-    left: 50%;
-    top: 50%;
-    line-height: 35px;
-    max-width: 700px;
-    font-size: 1.1rem;
-  }
-  .slider-container {
-    height: 50vh;
-  }
-
-  .mugshot {
-    left: 0;
-  }
-
-  .background {
-    left: 34%;
-  }
-
-  .collaborator {
-    font-size: 40px;
-    letter-spacing: 3px;
-  }
-
-  .info-container {
-    left: 38%;
-  }
-  
-  .info {
-    max-width: 450px;
-    line-height: 16px;
-    letter-spacing: 0.3px;
-    font-size: 12px;
-  }
-
-  .colab-contact {
-    padding-top: 5px;
-  }
-  
-  .colab-contact a {
-    font-size: 14px;
-    padding: 0 6px;
-  }
-  
-  .colab-socials {
-    padding-top: 10px;
-  }
-
-  .button-container {
-    top: 80%;
-  }
-
-  .arrow {
-    padding: 12px;
-    font-size: 20px;
-    border-radius: 8px;
-  }
-  
-  .left-arrow {
-    left: 3%;
-    z-index: 2;
-  }
-  
-  .right-arrow {
-    right: 3%;
+    right: 70%;
   }
 }
 
@@ -536,93 +421,68 @@ footer {
 @media screen and (max-width: 750px) {
   #title {
     font-size: 24px;
-    top: 23%;
-    color: var(--black);
-    text-shadow: 2px 2px var(--darkSilver);
+    top: 40%;
     letter-spacing: 2px;
   }
   
   .sub-caption {
     left: 50%;
-    top: 52%;
-    line-height: 25px;
+    top: 65%;
+    line-height: 20px;
     max-width: 800px;
-    font-size: 1rem;
+    font-size: 14px;
   }
-
-  .slider-container {
-    height: 50vh;
-  }
-
   .mugshot {
-    left: -1%;
-    height: 70%;
-    top: 15%;
+    left: 1%;
+    height: 50%;
+    top: 5%;
   }
-
-  .background {
-    left: 26%;
-  }
-
-  .collaborator {
-    font-size: 32px;
-    letter-spacing: 3px;
-  }
-
   .info-container {
-    left: 32%;
-    z-index: 5;
+    left: 38%;
+    right: 5%;
+    z-index: 10;
   }
-  
+  .collaborator {
+    font-size: 26px;
+  }
   .info {
-    padding-top: 20px;
-    max-width: 420px;
+    max-width: 60vw;
     line-height: 15px;
     font-size: 12px;
+    letter-spacing: 0.2px;
+  }
+  #long {
+    padding: 0;
+  }
+  .button-container {
+    top: 70%;
+  }
+  .arrow {
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 8px;
+  }
+  .left-arrow {
+    left: 5%;
+  }
+  .right-arrow {
+    right: 70%;
   }
 
   .colab-contact {
-    padding-top: 0;
+    gap: 20px;
   }
-  
   .colab-contact a {
     font-size: 12px;
-    padding: 0 5px;
   }
-  
-  .colab-socials {
-    padding-top: 10px;
-  }
-
-  .button-container {
-    top: 87%;
-  }
-
-  .arrow {
-    padding: 12px;
-    font-size: 20px;
-    border-radius: 8px;
-  }
-  
-  .left-arrow {
-    left: 3%;
-    z-index: 2;
-  }
-  
-  .right-arrow {
-    right: 75%;
-  }
-
   #hero-button {
     width: 90px;
     height: 30px;
     font-size: 16px;
   }
-
   .topnav:hover a {
     transform: none;
   }
-
   .topnav a:not(:last-child),
   .dropdown .dropbtn {
     display: none;
@@ -631,7 +491,6 @@ footer {
     float: right;
     display: block;
   }
-
   .topnav.responsive {
     position: relative fixed;
   }
@@ -652,20 +511,16 @@ footer {
     width: 100%;
     text-align: left;
   }
-
   .top-left {
     margin-left: 0;
   }
-
   .links {
     float: none;
     margin: 0;
   }
-
   .footer-container {
     gap: 5%;
   }
-  
   footer {
     padding: 2rem;
     margin-top: 5rem;

@@ -702,7 +702,7 @@ footer {
   }
   @keyframes moveLogo {
     100% {
-      transform: translate(-0.5vw, 10vh) scale(0.6);
+      transform: translate(-0.5vw, 11vh) scale(0.6);
     }
   }
 
@@ -724,19 +724,19 @@ footer {
   #pulse-logo {
     width: 60%;
   }
-  
+
   #scv-logo {
     width: 25%;
   }
-  
+
   #bloomington-logo {
     width: 25%;
   }
-  
+
   #pow-logo {
     width: 50%;
   }
-  
+
   #phantom-logo {
     width: 25%;
   }
@@ -749,11 +749,11 @@ footer {
     overflow-x: hidden;
   }
   .active-panel {
-    width: 55vw;
+    width: 65vw;
   }
   .panel.active-panel .quote {
     font-size: 14px;
-    letter-spacing: 0.01em;
+    line-height: 1;
     margin: 20px;
     text-align: left;
   }
@@ -771,7 +771,6 @@ footer {
   .drill-container {
     height: 70vh;
   }
-
   iframe {
     max-width: 100vw;
     margin-top: 0;

@@ -445,12 +445,14 @@ footer {
   .collaborator {
     font-size: 24px;
     white-space: nowrap;
+    letter-spacing: 0;
   }
   .info {
     max-width: 60vw;
     line-height: 12px;
     font-size: 12px;
     letter-spacing: 0.2px;
+    text-align: left;
   }
   #long {
     padding: 0;

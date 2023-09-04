@@ -382,7 +382,7 @@ footer {
   }
   .mugshot {
     left: 1%;
-    height: 80%;
+    height: 70%;
     top: 5%;
   }
   .info-container {
@@ -421,15 +421,15 @@ footer {
 @media screen and (max-width: 750px) {
   #title {
     font-size: 24px;
-    top: 25%;
+    top: 30%;
     letter-spacing: 2px;
   }
 
   .sub-caption {
     left: 50%;
-    top: 45%;
+    top: 60%;
     line-height: 15px;
-    max-width: 900px;
+    width: 65vw;
     font-size: 14px;
   }
   .mugshot {
@@ -459,8 +459,8 @@ footer {
     top: 70%;
   }
   .arrow {
-    padding: 15px;
-    font-size: 25px;
+    padding: 10px;
+    font-size: 12px;
     border-radius: 8px;
   }
   .left-arrow {

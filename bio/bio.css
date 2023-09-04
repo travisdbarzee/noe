@@ -17,7 +17,6 @@ body {
   margin: 0;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  height: 100vh;
 }
 
 .feature-img {
@@ -116,7 +115,6 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 85vh;
   margin-bottom: 5vh;
 }
 
@@ -274,10 +272,6 @@ footer {
     transform: none;
   }
 
-  #hero-background-img {
-    width: 80%;
-  }
-
   .topnav a:not(:last-child),
   .dropdown .dropbtn {
     display: none;
@@ -322,12 +316,11 @@ footer {
   }
 
   .container {
-    top: 30vh;
-    padding-top: 15vh;
+    top: 25vh;
+    padding-top: 5vh;
   }
 
   .bio-container {
-    height: 95vh;
     margin-bottom: 5vh;
   }
   #mugshot {

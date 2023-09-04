@@ -390,15 +390,15 @@ footer {
   }
   iframe {
     width: 90vw;
-    height: 40vh;
+    height: 35vh;
     top: 25vh;
   }
   .button-container {
     top: 85%;
   }
   .arrow {
-    padding: 15px;
-    font-size: 20px;
+    padding: 10px;
+    font-size: 12px;
   }
 .left-arrow {
   left: 30%;

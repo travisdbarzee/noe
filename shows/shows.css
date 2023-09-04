@@ -321,6 +321,10 @@ footer {
 }
 
 @media screen and (max-width: 750px) {
+  #title {
+    font-size: 24px;
+    top: 40%;
+  }
   #hero-button {
     width: 90px;
     height: 30px;

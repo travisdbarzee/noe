@@ -23,7 +23,6 @@ body {
   overflow: hidden;
   position: fixed;
   gap: 3rem;
-  overflow: hidden;
   top: 0;
   width: 100%;
   z-index: 1;
@@ -145,7 +144,6 @@ a:hover {
   align-items: center;
   height: 85vh;
   background: radial-gradient(var(--silver), var(--black));
-  overflow-y: hidden;
   animation: fadeIn 1 1s ease-out;
 }
 
@@ -650,6 +648,9 @@ footer {
 
 /* Responsiveness for small screens */
 @media screen and (max-width: 750px) {
+.opening-section {
+  overflow-x: hidden;
+}
   h1 {
     font-size: 24px;
   }
@@ -710,12 +711,44 @@ footer {
   }
   @keyframes moveLogo {
     100% {
-      transform: translate(5vw, 10vh);
+      transform: translate(-0.5vw, 8.5vh) scale(0.6);
     }
   }
+
+  .highlight-quote {
+    top: 10%;
+    left: 5%;
+    right: 5%;
+  }
   .visible-quote {
-    font-size: 14px;
+    font-size: 12px;
     padding: 10px;
+    letter-spacing: 0.1px;
+  }
+
+  #arcadia-logo {
+    width: 20%;
+  }
+
+  #pulse-logo {
+    width: 60%;
+  }
+  
+  #scv-logo {
+    width: 25%;
+  }
+  
+  #bloomington-logo {
+    width: 25%;
+  }
+  
+  #pow-logo {
+    width: 50%;
+    height: auto;
+  }
+  
+  #phantom-logo {
+    width: 25%;
   }
   .panel-container {
     margin: 0 2vw 0 2vw;
@@ -744,12 +777,14 @@ footer {
     font-size: 20px;
   }
   .drill-container {
-    height: 55vh;
+    height: 70vh;
   }
+
   iframe {
+    max-width: 100vw;
     margin-top: 0;
-    width: 60%;
-    height: 50%;
+    width: 90%;
+    height: 60%;
   }
   .circles {
     bottom: 13%;

@@ -322,8 +322,13 @@ footer {
   }
 
   .container {
-    top: 35vh;
-    padding-top: 10vh;
+    top: 30vh;
+    padding-top: 15vh;
+  }
+
+  .bio-container {
+    height: 95vh;
+    margin-bottom: 5vh;
   }
   #mugshot {
     max-width: 140px;

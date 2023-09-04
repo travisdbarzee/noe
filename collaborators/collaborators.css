@@ -421,33 +421,34 @@ footer {
 @media screen and (max-width: 750px) {
   #title {
     font-size: 24px;
-    top: 40%;
+    top: 25%;
     letter-spacing: 2px;
   }
-  
+
   .sub-caption {
     left: 50%;
-    top: 65%;
-    line-height: 20px;
-    max-width: 800px;
+    top: 45%;
+    line-height: 15px;
+    max-width: 900px;
     font-size: 14px;
   }
   .mugshot {
     left: 1%;
-    height: 50%;
-    top: 5%;
+    height: 40%;
+    top: 10%;
   }
   .info-container {
-    left: 38%;
+    left: 41%;
     right: 5%;
     z-index: 10;
   }
   .collaborator {
-    font-size: 26px;
+    font-size: 24px;
+    white-space: nowrap;
   }
   .info {
     max-width: 60vw;
-    line-height: 15px;
+    line-height: 12px;
     font-size: 12px;
     letter-spacing: 0.2px;
   }

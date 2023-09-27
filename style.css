@@ -816,9 +816,9 @@ footer {
     width: 65vw;
   }
   .panel.active-panel .quote {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1;
-    margin: 20px;
+    margin: 16px;
     text-align: left;
   }
   .panel.active-panel .author {

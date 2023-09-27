@@ -385,14 +385,13 @@ footer {
   }
 
   .show-description {
-    top: 12vh;
     padding: 10px;
     font-size: 18px;
   }
   iframe {
     width: 90vw;
     height: 40vh;
-    top: 30vh;
+    top: 25vh;
   }
   .button-container {
     top: 85%;

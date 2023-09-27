@@ -817,7 +817,7 @@ footer {
   }
   .panel.active-panel .quote {
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1;
     margin: 20px;
     text-align: left;
   }

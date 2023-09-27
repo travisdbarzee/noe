@@ -142,7 +142,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
   width: 25vw;
 }
 

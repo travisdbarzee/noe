@@ -390,7 +390,6 @@ a:hover {
 
 #bk-link {
   color: var(--darkSilver);
-  text-decoration: none;
   font-size: 20px;
 }
 
@@ -454,6 +453,9 @@ h1 {
 
 .panel.active-panel .quote {
   color: var(--white);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 20px;
   font-size: 1.5rem;
   text-shadow: 1px 1px var(--black);
   letter-spacing: 0.03em;
@@ -465,17 +467,19 @@ h1 {
 }
 
 .panel.active-panel .author {
-  color: var(--white);
+  color: var(--black);
+  width: fit-content;
   font-size: 1.5rem;
   margin: 0 0 0 2.5rem;
-  text-shadow: 1px 1px var(--darkSilver);
+  text-shadow: 1px 1px var(--silver);
   visibility: visible;
 }
 
 .panel.active-panel .author-info {
-  color: var(--white);
+  color: var(--black);
+  width: fit-content;
   font-size: 0.75rem;
-  text-shadow: 1px 1px var(--darkSilver);
+  text-shadow: 1px 1px var(--silver);
   margin: 0 0 0 2.5rem;
   visibility: visible;
 }
@@ -785,8 +789,7 @@ footer {
     width: 25%;
   }
   #bk-img {
-    padding: 20px;
-    margin-top: 50px;
+    padding: 15px;
     width: 40vw;
     height: 30vh;
   }
@@ -813,8 +816,8 @@ footer {
     width: 65vw;
   }
   .panel.active-panel .quote {
-    font-size: 14px;
-    line-height: 1;
+    font-size: 16px;
+    line-height: 1.2;
     margin: 20px;
     text-align: left;
   }
@@ -849,6 +852,6 @@ footer {
     padding: 10px 0 15px 0;
   }
   .fa-4x {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 }

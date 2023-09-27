@@ -117,7 +117,7 @@ a:hover {
 
 .img-change {
   opacity: 0.5;
-  transition: 1.5s linear;
+  transition: 0.75s linear;
 }
 
 @keyframes slideInLeft {
@@ -312,17 +312,17 @@ footer {
     padding: 15px;
     font-size: 20px;
   }
-.left-arrow {
-  left: 30%;
-}
-.right-arrow {
-  right: 30%;
-}
+  .left-arrow {
+    left: 30%;
+  }
+  .right-arrow {
+    right: 30%;
+  }
 }
 
 @media screen and (max-width: 750px) {
   #title {
-    font-size: 24px;
+    font-size: 36px;
     top: 40%;
   }
   #hero-button {
@@ -379,19 +379,20 @@ footer {
   }
 
   .show-title {
-    padding: 10px 30px;
-    font-size: 30px;
-    top: 10px;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
   }
-  
+
   .show-description {
-    top: 90px;
-    padding: 10px 20px;
+    top: 12vh;
+    padding: 10px;
+    font-size: 18px;
   }
   iframe {
     width: 90vw;
-    height: 35vh;
-    top: 25vh;
+    height: 40vh;
+    top: 30vh;
   }
   .button-container {
     top: 85%;
@@ -400,10 +401,10 @@ footer {
     padding: 10px;
     font-size: 12px;
   }
-.left-arrow {
-  left: 30%;
-}
-.right-arrow {
-  right: 30%;
-}
+  .left-arrow {
+    left: 30%;
+  }
+  .right-arrow {
+    right: 30%;
+  }
 }

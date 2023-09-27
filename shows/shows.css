@@ -391,10 +391,10 @@ footer {
   iframe {
     width: 90vw;
     height: 40vh;
-    top: 25vh;
+    top: 20vh;
   }
   .button-container {
-    top: 85%;
+    top: 80%;
   }
   .arrow {
     padding: 10px;

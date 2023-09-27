@@ -789,7 +789,7 @@ footer {
     width: 25%;
   }
   #bk-img {
-    padding: 5px;
+    padding: 25px;
     width: 40vw;
     height: 30vh;
   }
@@ -816,13 +816,13 @@ footer {
     width: 65vw;
   }
   .panel.active-panel .quote {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1;
     margin: 20px;
     text-align: left;
   }
   .panel.active-panel .author {
-    font-size: 16px;
+    font-size: 14px;
     margin: 0 0 0 20px;
   }
   .panel.active-panel .author-info {
